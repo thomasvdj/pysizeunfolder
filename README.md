@@ -81,4 +81,4 @@ pip install vtk pyvista.
 ```
 
 ## Documentation
-For now the documentation consists of the code examples as above (and in the examples folder) and the docstrings for all of the functions in the source code.
+For now the documentation consists of the code examples as above (and in the examples folder). Each function is documented using docstrings, which can be found in the source code.

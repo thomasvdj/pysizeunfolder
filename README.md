@@ -70,7 +70,7 @@ In the following example we generate 15 random points in the centered unit cube,
 points = rng.uniform(low=-0.5, high=0.5, size=(15, 3))
 area, section = pu.iur_3d_hull(points, 1, return_vertices=True, rng=rng)
 ```
-Visualizing the polyhedron and the planar section with matplotlib:
+Visualizing the polyhedron and the planar section with pyvista:
 
 <img src="https://github.com/thomasvdj/pysizeunfolder/blob/main/examples/random_polyhedron.png" width=50% height=50%>
 

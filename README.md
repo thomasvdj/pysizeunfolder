@@ -14,6 +14,12 @@ The library may be installed by running:
 pip install git+https://github.com/thomasvdj/vorostereology
 ```
 
+If you do not have git installed and you use the popular python Anaconda distribution, then you may install git with: 
+
+```
+conda install git
+```
+
 At a later stage I may consider uploading it to Pypi. This package depends on Numpy, Scipy, Cython and KDEpy, these are installed automatically.
 
 ## Code examples: Random sections of polygons

@@ -5,6 +5,7 @@ A python library with various functions related to stereological methods. In the
 * [Installation and dependencies](#installation-and-dependencies)
 * [Code examples: Random sections of polygons](#code-examples-random-sections-of-polygons)
 * [Code examples: Random sections of polyhedrons](#code-examples-random-sections-of-polyhedrons)
+* [Documentation](#documentation)
 
 ## Installation and dependencies
 The library may be installed by running:
@@ -16,7 +17,7 @@ pip install git+https://github.com/thomasvdj/vorostereology
 At a later stage I may consider uploading it to Pypi. This package depends on Numpy, Scipy, Cython and KDEpy, these are installed automatically.
 
 ## Code examples: Random sections of polygons
-To highlight some of the functionalities of this library we present some code snippets. All of the examples below can also be found in the examples folder. The following imports are used throughout the examples:
+To highlight some of the functionalities of this library we present some code snippets. All of the examples below can be found in more detail in the examples folder. The following imports are used throughout the examples:
 ```
 import pysizeunfolder as pu
 import numpy as np
@@ -57,13 +58,17 @@ Plotting lengths in a histogram and the x, y points of the approximation with ma
 
 <img src="https://github.com/thomasvdj/pysizeunfolder/blob/main/examples/cube_estimate.png" width=50% height=50%>
 
-## Example 2
+### Example 2
 In the following example we generate 15 random points in the centered unit cube, and we define a polyhedron as the convex hull of these points. For this given polygon we take a single random sections, and we also retrieve the vertices of the corresponding polygon.
 ```
 points = rng.uniform(low=-0.5, high=0.5, size=(15, 3))
 area, section = pu.iur_3d_hull(points, 1, return_vertices=True, rng=rng)
 ```
-Visualizing the polygon and the linear sections with matplotlib:
+Visualizing the polyhedron and the planar section with matplotlib:
 
 <img src="https://github.com/thomasvdj/pysizeunfolder/blob/main/examples/random_polyhedron.png" width=50% height=50%>
 
+Note: for the 3D visualization pyvista was used, which is not installed by default. It may be installed via: pip install vtk pyvista.
+
+## Documentation
+For now the documentation consists of the code examples as above (and in the examples folder) and the docstrings for all of the functions in the source code.

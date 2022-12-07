@@ -29,12 +29,13 @@ points = np.array([[-0.5, -0.5], [0.5, 0.5], [-0.5, 0.5], [0.5, -0.5]])
 lengths = pu.iur_2d_hull(points, n=1000000, rng)
 x, y = pu.approx_length_density(lengths)
 ```
+Plotting lengths in a histogram and the x, y points of the approximation with matplotlib yields:
+<img src="https://github.com/thomasvdj/pysizeunfolder/blob/main/examples/square_estimate.png" width=50% height=50%>
 ## Example 2
 In the following example we generate 10 random points in the centered unit square, and we define a polygon as the convex hull of these points. For this given polygon we take 100 random sections, and we also retrieve the vertices of the corresponding lines.
 ```
 points = rng.uniform(low=-0.5, high=0.5, size=(10, 2))
 lengths, vertices = pu.iur_2d_hull(points, n=100, return_vertices=True)
 ```
-
-<img src="https://github.com/thomasvdj/pysizeunfolder/blob/main/examples/cube_estimate.png" width=50% height=50%>
+<img src="https://github.com/thomasvdj/pysizeunfolder/blob/main/examples/random_polygon.png" width=50% height=50%>
 

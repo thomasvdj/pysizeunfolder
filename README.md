@@ -1,5 +1,5 @@
 # pysizeunfolder
-A python library with various functions related to stereological methods. In the current version there are some functions for taking random sections of convex polygons (2D) and polyhedrons (3D). These random sections are known as Isotropic Uniformly Random (IUR) sections. This library will at a later stage be updated with functions for estimating 3D grain/ particle size distributions from 2D sections. 
+A python library with various functions related to stereological methods. Currently, there are some functions for taking random line sections of convex polygons (2D) and plane sections of polyhedrons (3D). These random sections are known as Isotropic Uniformly Random (IUR) sections. This library will at a later stage be updated with functions for estimating 3D grain/ particle size distributions from 2D sections. 
 
 ## Table of contents
 * [Installation and dependencies](#installation-and-dependencies)
@@ -20,16 +20,16 @@ If you do not have git installed and you use the popular python Anaconda distrib
 conda install git
 ```
 
-At a later stage I may consider uploading it to Pypi. This package depends on Numpy, Scipy, Cython and KDEpy, these are installed automatically.
+This package depends on Numpy, Scipy, Cython and KDEpy, these are installed automatically.
 
 ## Code examples: Random sections of polygons
-To highlight some of the functionalities of this library we present some code snippets. All of the examples below can be found in more detail in the examples folder. The following imports are used throughout the examples:
+To highlight some of the functionalities of this library we present some code snippets. All of the examples below can be found in more detail in scripts in the examples folder. The following imports are used throughout the examples:
 ```
 import pysizeunfolder as pu
 import numpy as np
 ```
 ### Example 1
-In the following example we define the centered unit square via its vertices. Then, we take 1 million random linear sections of the square and we obtain the lengths. Given this sample of lengths we approximate the associated probability density function of this distribution. The random generator rng is ussed to make the results reproducible.
+In the following example we define the centered unit square via its vertices. Then, we take 1 million random line sections of the square and we obtain the lengths. Given this sample of lengths we approximate the associated probability density function of this distribution. The random generator rng is used to make the results reproducible.
 ```
 rng = np.random.default_rng(0)
 points = np.array([[-0.5, -0.5], [0.5, 0.5], [-0.5, 0.5], [0.5, -0.5]])
@@ -53,7 +53,7 @@ Visualizing the polygon and the linear sections with matplotlib:
 ## Code examples: Random sections of polyhedrons
 
 ### Example 1
-In the following example we define the centered unit cube via its vertices. Then, we take 1 million random planar sections of the cube and we obtain the areas. Given this sample of areas we approximate the associated probability density function of this distribution. 
+In the following example we define the centered unit cube via its vertices. Then, we take 1 million random plane sections of the cube and we obtain the areas. Given this sample of areas we approximate the associated probability density function of this distribution. 
 ```
 points = np.array([[0.5, 0.5, 0.5], [-0.5, 0.5, 0.5], [0.5, 0.5, -0.5], [0.5, -0.5, 0.5],
                    [-0.5, -0.5, 0.5], [0.5, -0.5, -0.5], [-0.5, 0.5, -0.5], [-0.5, -0.5, -0.5]])

@@ -54,7 +54,7 @@ points = np.array([[0.5, 0.5, 0.5], [-0.5, 0.5, 0.5], [0.5, 0.5, -0.5], [0.5, -0
 areas = pu.iur_3d_hull(points, n=1000000, rng=rng)
 x, y = pu.approx_area_density(areas)
 ```
-Plotting lengths in a histogram and the x, y points of the approximation with matplotlib:
+Plotting areas in a histogram and the x, y points of the approximation with matplotlib:
 
 <img src="https://github.com/thomasvdj/pysizeunfolder/blob/main/examples/cube_estimate.png" width=50% height=50%>
 

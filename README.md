@@ -77,7 +77,7 @@ Visualizing the polyhedron and the planar section with pyvista:
 Note: for the 3D visualization pyvista was used, which is not installed by default. It may be installed via: 
 
 ```
-pip install vtk pyvista.
+pip install vtk pyvista
 ```
 
 ## Documentation

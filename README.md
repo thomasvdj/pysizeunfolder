@@ -59,7 +59,7 @@ Plotting areas in a histogram and the x, y points of the approximation with matp
 <img src="https://github.com/thomasvdj/pysizeunfolder/blob/main/examples/cube_estimate.png" width=50% height=50%>
 
 ### Example 2
-In the following example we generate 15 random points in the centered unit cube, and we define a polyhedron as the convex hull of these points. For this given polygon we take a single random sections, and we also retrieve the vertices of the corresponding polygon.
+In the following example we generate 15 random points in the centered unit cube, and we define a polyhedron as the convex hull of these points. For this given polyhedron we take a single random plane section, and we also retrieve the vertices of the resulting polygon.
 ```
 points = rng.uniform(low=-0.5, high=0.5, size=(15, 3))
 area, section = pu.iur_3d_hull(points, 1, return_vertices=True, rng=rng)

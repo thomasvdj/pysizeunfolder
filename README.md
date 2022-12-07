@@ -74,7 +74,11 @@ Visualizing the polyhedron and the planar section with matplotlib:
 
 <img src="https://github.com/thomasvdj/pysizeunfolder/blob/main/examples/random_polyhedron.png" width=50% height=50%>
 
-Note: for the 3D visualization pyvista was used, which is not installed by default. It may be installed via: pip install vtk pyvista.
+Note: for the 3D visualization pyvista was used, which is not installed by default. It may be installed via: 
+
+```
+pip install vtk pyvista.
+```
 
 ## Documentation
 For now the documentation consists of the code examples as above (and in the examples folder) and the docstrings for all of the functions in the source code.

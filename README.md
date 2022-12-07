@@ -22,11 +22,11 @@ import pysizeunfolder as pu
 import numpy as np
 ```
 ### Example 1
-In the following example we define the centered unit square via its vertices. Then, we take 1 million random linear sections of the square and we obtain the lengths. Given this sample of lengths we approximate the associated probability density function of this distribution.
+In the following example we define the centered unit square via its vertices. Then, we take 1 million random linear sections of the square and we obtain the lengths. Given this sample of lengths we approximate the associated probability density function of this distribution. The random generator rng is ussed to make the results reproducible.
 ```
 rng = np.random.default_rng(0)
 points = np.array([[-0.5, -0.5], [0.5, 0.5], [-0.5, 0.5], [0.5, -0.5]])
-lengths = pu.iur_2d_hull(points, n=1000000)
+lengths = pu.iur_2d_hull(points, n=1000000, rng)
 x, y = pu.approx_length_density(lengths)
 ```
 ## Example 2
@@ -35,5 +35,5 @@ In the following example we generate 10 random points in the centered unit squar
 points = rng.uniform(low=-0.5, high=0.5, size=(10, 2))
 lengths, vertices = pu.iur_2d_hull(points, n=100, return_vertices=True)
 ```
-![Example 1](./examples/square_estimate.png)
+<img src="[https://i.imgur.com/ZWnhY9T.png](https://github.com/thomasvdj/pysizeunfolder/blob/main/examples/cube_estimate.png)" width=50% height=50%>
 

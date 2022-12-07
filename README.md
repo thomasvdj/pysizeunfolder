@@ -3,7 +3,7 @@ A python library with various functions related to stereological methods. In the
 
 ## Table of contents
 * [Installation and dependencies](#installation-and-dependencies)
-* [Code examples: Random sections of polygons and polyhedrons](#code-examples:-random-sections-of-polygons-and-polyhedrons)
+* [Code examples: Random sections of polygons and polyhedrons](#code-examples-random-sections-of-polygons-and-polyhedrons)
 
 ## Installation and dependencies
 The library may be installed by running:

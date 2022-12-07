@@ -35,5 +35,5 @@ In the following example we generate 10 random points in the centered unit squar
 points = rng.uniform(low=-0.5, high=0.5, size=(10, 2))
 lengths, vertices = pu.iur_2d_hull(points, n=100, return_vertices=True)
 ```
-![Example 1]("./examples/square estimate.png")
+![Example 1](./examples/square_estimate.png)
 

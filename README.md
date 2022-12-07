@@ -9,9 +9,9 @@ A python library with various functions related to stereological methods. In the
 ## Installation and dependencies
 The library may be installed by running:
 
-'''
+```
 pip install git+https://github.com/thomasvdj/vorostereology
-'''
+```
 
 At a later stage I may consider uploading it to Pypi. This package depends on Numpy, Scipy, Cython and KDEpy, these are installed automatically.
 

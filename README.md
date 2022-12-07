@@ -35,5 +35,6 @@ In the following example we generate 10 random points in the centered unit squar
 points = rng.uniform(low=-0.5, high=0.5, size=(10, 2))
 lengths, vertices = pu.iur_2d_hull(points, n=100, return_vertices=True)
 ```
-<img src="[https://i.imgur.com/ZWnhY9T.png](https://github.com/thomasvdj/pysizeunfolder/blob/main/examples/cube_estimate.png)" width=50% height=50%>
+
+<img src="https://github.com/thomasvdj/pysizeunfolder/blob/main/examples/cube_estimate.png" width=50% height=50%>
 

@@ -1,5 +1,5 @@
 # pysizeunfolder
-A python library with various functions related to stereological methods. Currently, there are some functions for taking random line sections of convex polygons (2D) and plane sections of polyhedrons (3D). These random sections are known as Isotropic Uniformly Random (IUR) sections. This library will at a later stage be updated with functions for estimating 3D grain/ particle size distributions from 2D sections. 
+A python library with various functions related to stereological methods. Currently, there are some functions for taking random line sections of convex polygons (2D) and plane sections of convex polyhedrons (3D). These random sections are known as Isotropic Uniformly Random (IUR) sections. This library will at a later stage be updated with functions for estimating 3D grain/ particle size distributions from 2D sections. 
 
 ## Table of contents
 * [Installation and dependencies](#installation-and-dependencies)

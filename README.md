@@ -32,7 +32,8 @@ x, y = pu.approx_length_density(lengths)
 Plotting lengths in a histogram and the x, y points of the approximation with matplotlib:
 
 <img src="https://github.com/thomasvdj/pysizeunfolder/blob/main/examples/square_estimate.png" width=50% height=50%>
-## Example 2
+
+### Example 2
 In the following example we generate 10 random points in the centered unit square, and we define a polygon as the convex hull of these points. For this given polygon we take 100 random sections, and we also retrieve the vertices of the corresponding lines.
 ```
 points = rng.uniform(low=-0.5, high=0.5, size=(10, 2))
@@ -55,6 +56,7 @@ x, y = pu.approx_area_density(areas)
 Plotting lengths in a histogram and the x, y points of the approximation with matplotlib:
 
 <img src="https://github.com/thomasvdj/pysizeunfolder/blob/main/examples/cube_estimate.png" width=50% height=50%>
+
 ## Example 2
 In the following example we generate 15 random points in the centered unit cube, and we define a polyhedron as the convex hull of these points. For this given polygon we take a single random sections, and we also retrieve the vertices of the corresponding polygon.
 ```

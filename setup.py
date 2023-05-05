@@ -19,7 +19,7 @@ setup(
     author="Thomas van der Jagt",
     packages=["pysizeunfolder", ],
     package_dir={"pysizeunfolder": "pysizeunfolder"},
-    install_requires=['cython', 'numpy', 'scipy', 'KDEpy', ],
+    install_requires=['cython', 'numpy', 'scipy', 'KDEpy', 'statsmodels', 'scikit-learn', ],
     ext_modules=extensions,
     keywords=["geometry", "mathematics", ],
     classifiers=[

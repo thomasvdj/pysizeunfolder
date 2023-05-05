@@ -22,7 +22,7 @@ If you do not have git installed and you use the popular python Anaconda distrib
 conda install git
 ```
 
-This package depends on Numpy, Scipy, Cython and KDEpy, these are installed automatically.
+This package depends on Numpy, Scipy, Cython, KDEpy, statsmodels and scikit-learn. These are installed automatically.
 
 ## Code examples: Random sections of polygons
 To highlight some of the functionalities of this library we present some code snippets. All of the examples below can be found in more detail in scripts in the examples folder. The following imports are used throughout the examples:

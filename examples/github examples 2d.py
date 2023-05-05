@@ -21,7 +21,7 @@ plt.subplots_adjust(bottom=0.15)
 plt.subplots_adjust(left=0.11)
 plt.xlabel("Length")
 plt.ylabel("Density")
-plt.savefig("square estimate.png", dpi=600)
+plt.savefig("square_estimate.png", dpi=600)
 #plt.show()
 
 # Example 2
@@ -40,7 +40,7 @@ ax1.add_collection(lc)
 ax1.set_axis_off()
 ax1.set_xlim(-0.5, 0.5)
 ax1.set_ylim(-0.5, 0.5)
-plt.savefig("random polygon.png", dpi=600)
+plt.savefig("random_polygon.png", dpi=600)
 #plt.show()
 
 # Various code examples

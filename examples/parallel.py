@@ -3,6 +3,7 @@ import numpy as np
 import pysizeunfolder as pu
 from joblib import Parallel, delayed
 import matplotlib.pyplot as plt
+import pickle
 
 
 # Author: Thomas van der Jagt
@@ -24,6 +25,10 @@ sizes[-1] += remainder
 
 res = Parallel(n_jobs=num_cpus)(delayed(pu.iur_3d_hull)(points, sizes[i], False, streams[i]) for i in range(num_cpus))
 areas = np.concatenate(res)
+
+f = open("cube_sample.pkl", "wb")
+pickle.dump(areas, f)
+f.close()
 
 x, y = pu.approx_area_density(areas)
 

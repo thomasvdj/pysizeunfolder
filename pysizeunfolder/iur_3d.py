@@ -309,7 +309,7 @@ def faces_3d_hull(points):
     return halfspaces
 
 
-def vertices_faces_3d_half(halfspaces, origin):
+def faces_3d_half(halfspaces, origin):
     """
     A function which computes the vertices and faces of a given polyhedron. The convex polyhedron should be
     represented by halfspace representation. For more details see Scipy.Spatial.HalfspaceIntersection, which is used

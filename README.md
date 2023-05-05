@@ -13,7 +13,7 @@ A python library with various functions related to stereological methods. Curren
 The library may be installed by running:
 
 ```
-pip install git+https://github.com/thomasvdj/vorostereology
+pip install git+https://github.com/thomasvdj/pysizeunfolder
 ```
 
 If you do not have git installed and you use the popular python Anaconda distribution, then you may install git with: 

@@ -116,17 +116,19 @@ For now the documentation consists of the code examples as above (and in the exa
 
 ## References
 If you find this code useful, or are interested in the mathematical details we refer to the following papers:
-#+BEGIN_SRC
+```
 @article{vdjagt2023_1,
   title={Existence and approximation of densities of chord length- and cross section area distributions},
   author={Thomas van der Jagt and Geurt Jongbloed and Martina Vittorietti},
   journal={arXiv preprint arXiv:2305.02864},
   year={2023}
 }
+```
+```
 @article{vdjagt2023_2,
   title={Stereological determination of particle size distributions for similar convex bodies},
   author={Thomas van der Jagt and Geurt Jongbloed and Martina Vittorietti},
   journal={arXiv preprint arXiv:2305.02856},
   year={2023}
 }
-#+END_SRC
+```
